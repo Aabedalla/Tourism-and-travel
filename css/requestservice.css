@@ -1,0 +1,62 @@
+
+.hero {
+    background: linear-gradient(135deg, #6a5af9, #4e3ec4);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.clients img {
+    max-width: 100%;
+    margin: 10px;
+}
+
+.contact {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.btn-primary {
+    background-color: #6a5af9;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4e3ec4;
+}
+
+.contact-info{
+    display: flex;
+  }
+#contactForm{
+    margin-top: 50px;
+}   
+.contact-content h2{
+    text-align: left;
+    margin-top: 50px;
+}
+.contact-content p{
+    text-align: left;
+    color: gray;
+}
+.form-control{
+    padding: 20px 15px;
+}
+
+.form-question{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px;
+}
+  

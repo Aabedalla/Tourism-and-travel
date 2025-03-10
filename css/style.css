@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+:root{
+    --primary-color:#2887ff;
+    --primary-color-dark:#2476da;
+    --text-dark:#0a0a0a;
+    --text-light:#737373;
+    --extra-light:#f3f4f6;
+    --white:#ffffff;
+    --max-width:1200px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+.section__container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 80px 16px ;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+.section__description{
+    max-width: 600px;
+    margin-inline: auto;
+    color: var(--text-light);
+    text-align: center;
+}
+.btnn{
+    padding: 12px 24px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    white-space: nowrap;
+    color: var(--white);
+    border-radius:80px ;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btnn:hover{
+    background-color: var(--primary-color-dark);
+}
+.logo{
+    font-size: 28px;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--text-dark);
+}
+img{
+    display:flex;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+ul{
+    list-style: none  ;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "DM Sans" , "sans-serif";
+}
+.nav{
+    position: fixed;
+    isolation: isolate;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+.nav__header{
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+.nav__logo .logo{
+    font-size: 24px;
+    color: var(--white);
+}
+
+.nav__menu__btn{
+    font-size: 24px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav__links{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    background-color: var(--primary-color);
+    transition: transform 0.5s;
+    z-index: -1;
+}
+.highlight {
+    color: #ff5722;
+    font-weight: bold;
+}
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.faq-item {
+    cursor: pointer;
+}
+.section-title{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-weight: 800;
+}
+.travil-choos{
+    text-align: left;
+}
+.choosus{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 3px 0px;
+}
+.nav__links.open{
+    transform: translateY(100%);
+}
+.nav__links a{
+    font-weight: 600;
+    color: var(--white);
+    white-space: nowrap;
+}
+.nav__link a:hover{
+    color: var(--text-dark);
+}
+.nav__btns{
+    display: none;
+}
+
+.container{
+    margin-top: 68px;
+}
+.hearder-section{
+    background-image: url('assets/header-bg.jpg');
+    width: 100%;
+    padding-bottom: 50px;
+    background-size: cover;
+}
+.plane img{
+    padding-top: 5rem;
+}
+.companyTitle {
+    margin-bottom: 20px;
+}
+.companyTitle h1{
+    color: white;
+    font-family: fantasy;
+    font-size: 65px;
+    text-align: left;
+    padding-top: 5rem;
+}
+.companyTitle p{
+    color: var(--white);
+    text-align: left;
+    padding: 20px 0px;
+}
+.companyTitle a{
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.companyTitle a:hover{
+    background-color: var(--primary-color);
+    scale: 5px;
+    border-color: var(--primary-color);
+}
+.service h1,p{
+    text-align: center;
+}
+.serviceSection{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card-img{
+    border-radius: 5px;
+}
+.card{
+    margin-top: 15px;
+}
+.card-text{
+    text-align: left;
+}
+.desco-Luxury h1{
+    font-size: 52px;
+}
+.LuxuryPara p{
+    text-align: left;
+}
+.travelExperinces p,h1,h4{
+    text-align: center;
+}
+/* .travelExperinces h1{
+    font-size: 26px;
+} */
+.desco-Luxury h1{
+    text-align: left;
+}
+.Unmactched{
+    text-align: center;
+}
+.Unmactched img{
+    
+}
+.Gosomewhere{
+    margin-top: 20px;
+}
+.Dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.Learn-More{
+    margin-right: 10px;
+}
+.Showcase {
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.Showcase:hover{
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5)
+}
+.aboutimg img{
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.aboutPara p{
+    text-align: left;
+}
+.multyfeed{
+    display: flex;
+}
+.part img{
+    vertical-align: middle;
+}
+.contact h1{
+    margin-bottom: 50px;
+}
+.messege  input{
+    width: 100%;   
+}
+.messege textarea{
+    height: 200px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid #8ebdf7;
+    background-color: #f3f8ff;
+}
+.messege img{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+}
+.latter input{
+    height: 150px;
+    padding-top: 0px;
+    margin-top: 0px;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid #8ebdf7;
+    background-color: #f3f8ff;
+}
+.information input{
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid #8ebdf7;
+    background-color: #f3f8ff;
+}
+.information input:focus{
+    border-color: red;
+    
+}
+.footer p{
+    text-align: left;
+    width: 100%;
+    color: #737373;
+}
+.fas{
+    border: 1px solid #2887ff;
+    width: 50px;
+    height: 50px;
+    background-color: #2887ff;
+    border-radius: 50px;
+    display: inline-flex;
+}
+.Quicklinks h4{
+    text-align: left;
+}
+.Quicklinks a{
+    text-decoration: none;
+    color: #737373;
+    padding-top: 20px;
+}
+.Quicklinks a:hover {
+    color: #2476da;
+}
+.Quicklinks{
+    text-align: left;
+    display: grid;
+}
+.Quicklinks input{
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: var(--text-dark);
+    background-color: var(--white);
+    border: 1px solid var(--text-light);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.Subscribe{
+    margin-top: 20px;
+    color: white !important;
+    padding: 10px !important;
+}
+.Copyright{
+    color: #737373;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.checkmarkImg img{
+    margin-bottom: 15px;
+    width: 40px;
+    margin-left: 40%;   
+}
+
+.AboutUs {
+    margin-top: 7px;
+    color: white !important;
+    padding: 10px !important;
+}
+
+.card:hover{
+    background-color: rgb(226, 226, 226);
+    transition: 0.5s;
+    color: black;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5)
+}
+
+.travel-background img{
+    border-radius: 15px;
+}
+.allAbout p{
+    text-align: left;
+}
+    .services-section {
+      background: linear-gradient(135deg, #f0f4f8, #d9e6f2);
+      padding: 60px 0;
+    }
+
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .service-card img {
+      border-radius: 15px 15px 0 0;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-card .card-body {
+      background: #ffffff;
+      border-radius: 0 0 15px 15px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .service-card .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .service-card .card-text {
+      color: #666;
+      font-size: 1rem;
+    }
+
+    .service-card .btn {
+      margin-top: 10px;
+      background: #007bff;
+      color: #fff;
+      border-radius: 50px;
+      padding: 10px 20px;
+      transition: background 0.3s ease;
+    }
+
+    .service-card .btn:hover {
+      background: #0056b3;
+    }
+
+    .photoShowcase {
+        padding: 30px 0;
+        background-color: #212529;
+        color: #fff;
+        margin: 50px 0px;
+    }
+
+    .Showcase-img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .Showcase-img:hover {
+        transform: scale(1.1);
+        filter: brightness(85%);
+    }
+    .travelExperiences {
+        background-color: #f8f9fa;
+        padding: 60px 0;
+        color: #333;
+    }
+
+    .travelExperiences h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .travelExperiences .lead {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 40px;
+    }
+
+    .experience-card {
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .experience-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .checkmark-img img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .checkmark-img img:hover {
+        transform: scale(1.1);
+    }
+
+    .experience-card h3 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 20px;
+    }
+
+    .ABOUT {
+        padding: 60px 0;
+        background-color: #f8f9fa;
+    }
+
+    .aboutPara h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .aboutPara p {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+
+    .aboutimg img {
+        transition: transform 0.4s ease;
+    }
+
+    .aboutimg img:hover {
+        transform: scale(1.05);
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+    .feedback {
+        background-color: #f1f1f1;
+        padding: 80px 0;
+    }
+
+    .feedback h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    .feedback .lead {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 40px;
+    }
+
+    .feedback-card {
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feedback-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .feedback-card img {
+        max-height: 220px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .feedback-card:hover img {
+        transform: scale(1.05);
+    }
+
+    .feedback-card .card-body {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .feedback-card .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .feedback-card .card-text {
+        font-size: 1rem;
+        color: #777;
+        line-height: 1.6;
+    }
+
+    .experience-card p {
+        font-size: 1rem;
+        color: #777;
+        line-height: 1.6;
+    }
+
+    .showcase-card {
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .partner-section {
+        padding: 80px 0;
+        background-color: #f1f1f1;
+    }
+
+    .partner-section h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 20px;
+    }
+
+    .partner-section .lead {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 40px;
+    }
+
+    .benefit-card {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .benefit-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .benefit-card .icon {
+        font-size: 3rem;
+        color: #007bff;
+        margin-bottom: 15px;
+    }
+
+    .benefit-card h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .step-card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+
+    .step-card h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    .step-card p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+    }
+    #partner-form {
+        background-color: #f8f9fa;
+    }
+
+    .form-control-lg {
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 1.1rem;
+        transition: border-color 0.3s ease;
+    }
+
+    .form-control-lg:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+.form-row{
+    display: flex
+    ;
+        margin: 5px;
+}
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+    .showcase-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .showcase-card .card-body {
+        text-align: left;
+    }
+
+    .btn-primary {
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #138496;
+        border-color: #138496;
+    }
+
+    .modal-body img {
+        border-radius: 10px;
+    }
+ 
+@media (width > 540px) {
+    .travelExperinces h1{
+        font-size: 26px;
+    }
+}

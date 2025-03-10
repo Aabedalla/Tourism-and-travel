@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Life Easy Travel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<header>
+    <nav class="bg-blue-600 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center" style="margin: 
+        0px;">
+            <a href="index.html" class="text-white text-2xl font-bold">LifeEase Travel</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-white  font-bold text-lg hover:text-gray-300 transition">Home</a>
+                <a href="About-us.html" class="text-white font-bold text-lg hover:text-gray-300 transition">About</a>
+                <a href="partner.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Partners</a>
+                <a href="service.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Service</a>
+                <a href="contact-us.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Contact</a>
+                <a href="requestservice.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Request Service</a>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="bg-white text-blue-600 px-4 py-2 rounded-full shadow hover:bg-gray-200 transition">Sign In</a>
+                <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-full shadow hover:bg-blue-800 transition">Sign Up</a>
+            </div>
+            <button class="md:hidden text-white text-2xl" id="menu-btn">☰</button>
+        </div>
+        <div class="hidden md:hidden bg-blue-600 p-4" id="mobile-menu">
+            <a href="index.html" class="block text-white py-2 hover:text-gray-300">Home</a>
+            <a href="About-us.html" class="block text-white py-2 hover:text-gray-300">About</a>
+            <a href="partner.html" class="block text-white py-2 hover:text-gray-300">Partners</a>
+            <a href="service.html" class="block text-white py-2 hover:text-gray-300">Service</a>
+            <a href="contact-us.html" class="block text-white py-2 hover:text-gray-300">Contact</a>
+            <a href="requestservice.html" class="block text-white py-2 hover:text-gray-300">Request Service</a>
+            <a href="#" class="block text-white py-2 hover:text-gray-300">Sign In</a>
+            <a href="#" class="block text-white py-2 hover:text-gray-300">Sign Up</a>
+        </div>
+    </nav>
+  </header>
+<body>
+
+  <div class="container ">
+    <!-- About Us Section -->
+    <section>
+        <h2 class="section-title">About Us</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="travil-choos">
+                    <span class="highlight">Life Easy Travel</span> is your gateway to exclusive, luxurious travel experiences. In today's fast-paced world, traveling has transformed into an art that combines comfort, efficiency, and style. For business executives, celebrities, and discerning travelers, every journey should feel like a tailored masterpiece.
+                </p>
+                <p class="travil-choos">
+                    We understand that travel is not just about getting from one place to another—it’s about the experience along the way. That’s why we focus on crafting journeys that prioritize your needs, offering personalized services that redefine comfort and luxury.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <p class="travil-choos">
+                    From premium flight bookings to handpicked accommodations and exclusive recreational activities, <span class="highlight">Life Easy Travel</span> ensures a seamless and unparalleled travel experience. Whether you’re traveling for business or leisure, we make sure every aspect of your journey is unforgettable.
+                </p>
+                <p class="travil-choos">
+                    Our commitment is to deliver world-class services to high-end clients, helping you focus on what matters most while we take care of the details.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider Section -->
+    <section>
+        <div id="travelSlider" class="carousel slide my-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/wallpaperflare.jpg" class="d-block w-100" alt="Luxury travel experience">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/wallpaperflare.jpg" class="d-block w-100" alt="Premium destinations">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/wallpaperflare.jpg" class="d-block w-100" alt="Exquisite stays">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#travelSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#travelSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section>
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="icon-box">
+                   <img src="assets/h1.webp" class="choosus">
+                    <h5>Seamless Travel</h5>
+                    <p   >Effortless flight bookings and VIP lounge access.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box">
+                    <img src="assets/h2.jpg" class="choosus">
+                    <h5>Luxury Stays</h5>
+                    <p>Exclusive accommodations at top destinations worldwide.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box">
+                    <img src="assets/h3.webp" class="choosus">
+                    <h5>Curated Experiences</h5>
+                    <p >Tailored activities to match your unique lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="text-center my-5">
+        <h4>Ready to Plan Your Dream Journey?</h4>
+        <button class="btn btn-primary btn-lg mt-3">Start Now</button>
+    </section>
+</div>
+
+
+
+    
+
+<section class="footer">
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="nav__logo">
+                    <a href="#" class="logo" style="color: black;">LifeEase Travel</a>
+                </div>
+                <p style="text-align: left; margin-top: 30px;">
+                    Explore the world with ease and excitement through our comprehensive travel platform. Your journey begins here, where
+                    seamless planning meets unforgettable experiences.
+                </p>
+                <div class="socilMedia">
+                    <div class="fas">
+
+                    </div>
+                    <div class="fas">
+                        
+                    </div>
+                    <div class="fas">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="Quicklinks">
+                    <h4>Quick Links</h4>
+                        <a href="#">Home</a>
+                        <a href="#">Flights</a>
+                        <a href="#">Hotels</a>
+                        <a href="#">Cruise</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="Quicklinks">
+                <h4>Contact Us</h4>
+                <a href="#"><span><i class="ri-phone-fill"></i></span>+91 9876543210</a>
+                <a href="#">
+                    <span><i class="ri-record-mail-line"></i></span> info@skywings
+                  </a>
+                  <a href="#">
+                    <span><i class="ri-map-pin-2-fill"></i></span> New Delhi, India
+                  </a>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="Quicklinks">
+                    <h4>Subscribe</h4>
+                    <input placeholder="Enter Your email">
+                    <a href="#" class="btn btn-primary Subscribe">Subscribe</a>
+                </div>
+            </div>
+        
+    </div>
+</footer>
+</section>
+
+<p class="Copyright">Copyright © 2024 ABEDALLA EMARA. All rights reserved.</p>
+
+<script src="js/javascript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

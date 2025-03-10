@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<header>
+    <nav class="bg-blue-600 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center" style="margin: 
+        0px;">
+            <a href="index.html" class="text-white text-2xl font-bold">LifeEase Travel</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-white  font-bold text-lg hover:text-gray-300 transition">Home</a>
+                <a href="About-us.html" class="text-white font-bold text-lg hover:text-gray-300 transition">About</a>
+                <a href="partner.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Partners</a>
+                <a href="service.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Service</a>
+                <a href="contact-us.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Contact</a>
+                <a href="requestservice.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Request Service</a>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="bg-white text-blue-600 px-4 py-2 rounded-full shadow hover:bg-gray-200 transition">Sign In</a>
+                <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-full shadow hover:bg-blue-800 transition">Sign Up</a>
+            </div>
+            <button class="md:hidden text-white text-2xl" id="menu-btn">☰</button>
+        </div>
+        <div class="hidden md:hidden bg-blue-600 p-4" id="mobile-menu">
+            <a href="index.html" class="block text-white py-2 hover:text-gray-300">Home</a>
+            <a href="About-us.html" class="block text-white py-2 hover:text-gray-300">About</a>
+            <a href="partner.html" class="block text-white py-2 hover:text-gray-300">Partners</a>
+            <a href="service.html" class="block text-white py-2 hover:text-gray-300">Service</a>
+            <a href="contact-us.html" class="block text-white py-2 hover:text-gray-300">Contact</a>
+            <a href="requestservice.html" class="block text-white py-2 hover:text-gray-300">Request Service</a>
+            <a href="#" class="block text-white py-2 hover:text-gray-300">Sign In</a>
+            <a href="#" class="block text-white py-2 hover:text-gray-300">Sign Up</a>
+        </div>
+    </nav>
+</header>
+<body class="bg-gray-100 py-10">
+    <div class="container mx-auto bg-white p-8 rounded-lg shadow-lg max-w-2xl">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-blue-600">Edit Profile</h1>
+        </div>
+
+        <form class="space-y-6">
+            <div class="flex flex-col">
+                <label for="name" class="text-blue-600 font-medium mb-2">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" 
+                    class="px-4 py-4 border border-blue-500 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="email" class="text-blue-600 font-medium mb-2">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" 
+                    class="px-4 py-4 border border-blue-500 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="password" class="text-blue-600 font-medium mb-2">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter a new password" 
+                    class="px-4 py-4 border border-blue-500 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="confirm-password" class="text-blue-600 font-medium mb-2">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" 
+                    class="px-4 py-4 border border-blue-500 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="phone" class="text-blue-600 font-medium mb-2">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" 
+                    class="px-4 py-4 border border-blue-500 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+
+            <div class="flex justify-center">
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">Save Changes</button>
+            </div>
+        </form>
+    </div>
+
+    <section class="footer">
+        <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="nav__logo">
+                        <a href="#" class="logo" style="color: black;">LifeEase Travel</a>
+                    </div>
+                    <p style="text-align: left; margin-top: 30px;">
+                        Explore the world with ease and excitement through our comprehensive travel platform. Your journey begins here, where
+                        seamless planning meets unforgettable experiences.
+                    </p>
+                    <div class="socilMedia">
+                        <div class="fas">
+    
+                        </div>
+                        <div class="fas">
+                            
+                        </div>
+                        <div class="fas">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="Quicklinks">
+                        <h4>Quick Links</h4>
+                            <a href="#">Home</a>
+                            <a href="#">Flights</a>
+                            <a href="#">Hotels</a>
+                            <a href="#">Cruise</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="Quicklinks">
+                    <h4>Contact Us</h4>
+                    <a href="#"><span><i class="ri-phone-fill"></i></span>+91 9876543210</a>
+                    <a href="#">
+                        <span><i class="ri-record-mail-line"></i></span> info@skywings
+                      </a>
+                      <a href="#">
+                        <span><i class="ri-map-pin-2-fill"></i></span> New Delhi, India
+                      </a>
+                    </div>
+    
+                </div>
+                <div class="col-md-3">
+                    <div class="Quicklinks">
+                        <h4>Subscribe</h4>
+                        <input placeholder="Enter Your email">
+                        <a href="#" class="btn btn-primary Subscribe">Subscribe</a>
+                    </div>
+                </div>
+            
+        </div>
+    </footer>
+    </section>
+    
+    <p class="Copyright">Copyright © 2024 ABEDALLA EMARA. All rights reserved.</p>
+    </body>
+    
+</body>
+</html>

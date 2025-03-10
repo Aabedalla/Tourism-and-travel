@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<header>
+    <nav class="bg-blue-600 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center" style="margin: 
+        0px;">
+            <a href="index.html" class="text-white text-2xl font-bold">LifeEase Travel</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-white  font-bold text-lg hover:text-gray-300 transition">Home</a>
+                <a href="About-us.html" class="text-white font-bold text-lg hover:text-gray-300 transition">About</a>
+                <a href="partner.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Partners</a>
+                <a href="service.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Service</a>
+                <a href="contact-us.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Contact</a>
+                <a href="requestservice.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Request Service</a>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="bg-white text-blue-600 px-4 py-2 rounded-full shadow hover:bg-gray-200 transition">Sign In</a>
+                <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-full shadow hover:bg-blue-800 transition">Sign Up</a>
+            </div>
+            <button class="md:hidden text-white text-2xl" id="menu-btn">☰</button>
+        </div>
+        <div class="hidden md:hidden bg-blue-600 p-4" id="mobile-menu">
+            <a href="index.html" class="block text-white py-2 hover:text-gray-300">Home</a>
+            <a href="About-us.html" class="block text-white py-2 hover:text-gray-300">About</a>
+            <a href="partner.html" class="block text-white py-2 hover:text-gray-300">Partners</a>
+            <a href="service.html" class="block text-white py-2 hover:text-gray-300">Service</a>
+            <a href="contact-us.html" class="block text-white py-2 hover:text-gray-300">Contact</a>
+            <a href="requestservice.html" class="block text-white py-2 hover:text-gray-300">Request Service</a>
+            <a href="#" class="block text-white py-2 hover:text-gray-300">Sign In</a>
+            <a href="#" class="block text-white py-2 hover:text-gray-300">Sign Up</a>
+        </div>
+    </nav>
+</header>
+<body class="bg-gray-100 py-5">
+    <div class="container mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <div class="text-center mb-6">
+            <h1 class="text-3xl font-bold text-black mb-4">Customer Profile</h1>
+            <p class="text-black">Name: <span id="student-name" class="font-medium">Abedalla Emara</span></p>
+            <p class="text-black">Phone: <span id="student-name" class="font-medium">+972598700073</span></p>
+            <p class="text-black">Email: <span id="student-email" class="font-medium">abedallaemara24@example.com</span></p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-3">Exam Results</h2>
+            <table class="min-w-full bg-blue-100 border-collapse border border-blue-300">
+                <thead>
+                    <tr class="bg-blue-300">
+                        <th class="py-2 px-4 border border-blue-400 text-left text-blue-800"> Service Name</th>
+                        <th class="py-2 px-4 border border-blue-400 text-left text-blue-800">Order date</th>
+                        <th class="py-2 px-4 border border-blue-400 text-left text-blue-800">Service status</th>
+
+                    </tr>
+                </thead>
+                <tbody id="exam-results">
+                    <tr>
+                        <td class="py-2 px-4 border border-blue-300">Service 1</td>
+                        <td class="py-2 px-4 border border-blue-300">25/03/2025</td>
+                        <td class="py-2 px-4 border border-blue-300">Deleted</td>
+                        
+
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border border-blue-300">Service 2</td>
+                        <td class="py-2 px-4 border border-blue-300">13/07/2024</td>
+                        <td class="py-2 px-4 border border-blue-300">review</td>
+
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border border-blue-300">Service 2</td>
+                        <td class="py-2 px-4 border border-blue-300">10/12/2024</td>
+                        <td class="py-2 px-4 border border-blue-300">Don</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <button class="hover:bg-blue-400 text-white font-bold bg-blue-500 py-3 px-6 text-1xl rounded-md">Edite Profile</button>
+    </div>
+
+    <section class="footer">
+        <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="nav__logo">
+                        <a href="#" class="logo" style="color: black;">LifeEase Travel</a>
+                    </div>
+                    <p style="text-align: left; margin-top: 30px;">
+                        Explore the world with ease and excitement through our comprehensive travel platform. Your journey begins here, where
+                        seamless planning meets unforgettable experiences.
+                    </p>
+                    <div class="socilMedia">
+                        <div class="fas">
+    
+                        </div>
+                        <div class="fas">
+                            
+                        </div>
+                        <div class="fas">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="Quicklinks">
+                        <h4>Quick Links</h4>
+                            <a href="#">Home</a>
+                            <a href="#">Flights</a>
+                            <a href="#">Hotels</a>
+                            <a href="#">Cruise</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="Quicklinks">
+                    <h4>Contact Us</h4>
+                    <a href="#"><span><i class="ri-phone-fill"></i></span>+91 9876543210</a>
+                    <a href="#">
+                        <span><i class="ri-record-mail-line"></i></span> info@skywings
+                      </a>
+                      <a href="#">
+                        <span><i class="ri-map-pin-2-fill"></i></span> New Delhi, India
+                      </a>
+                    </div>
+    
+                </div>
+                <div class="col-md-3">
+                    <div class="Quicklinks">
+                        <h4>Subscribe</h4>
+                        <input placeholder="Enter Your email">
+                        <a href="#" class="btn btn-primary Subscribe">Subscribe</a>
+                    </div>
+                </div>
+            
+        </div>
+    </footer>
+    </section>
+    
+    <p class="Copyright">Copyright © 2024 ABEDALLA EMARA. All rights reserved.</p>
+    </body>
+    
+</body>
+</html>

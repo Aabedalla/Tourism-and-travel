@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeEase Travel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <header>
+    <nav class="bg-blue-600 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center" style="margin: 
+        0px;">
+            <a href="index.html" class="text-white text-2xl font-bold">LifeEase Travel</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-white  font-bold text-lg hover:text-gray-300 transition">Home</a>
+                <a href="About-us.html" class="text-white font-bold text-lg hover:text-gray-300 transition">About</a>
+                <a href="partner.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Partners</a>
+                <a href="service.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Service</a>
+                <a href="contact-us.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Contact</a>
+                <a href="requestservice.html" class="text-white font-bold text-lg hover:text-gray-300 transition">Request Service</a>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="bg-white text-blue-600 px-4 py-2 rounded-full shadow hover:bg-gray-200 transition">Sign In</a>
+                <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-full shadow hover:bg-blue-800 transition">Sign Up</a>
+            </div>
+            <button class="md:hidden text-white text-2xl" id="menu-btn">☰</button>
+        </div>
+        <div class="hidden md:hidden bg-blue-600 p-4" id="mobile-menu">
+            <a href="index.html" class="block text-white py-2 hover:text-gray-300">Home</a>
+            <a href="About-us.html" class="block text-white py-2 hover:text-gray-300">About</a>
+            <a href="partner.html" class="block text-white py-2 hover:text-gray-300">Partners</a>
+            <a href="service.html" class="block text-white py-2 hover:text-gray-300">Service</a>
+            <a href="contact-us.html" class="block text-white py-2 hover:text-gray-300">Contact</a>
+            <a href="requestservice.html" class="block text-white py-2 hover:text-gray-300">Request Service</a>
+            <a href="#" class="block text-white py-2 hover:text-gray-300">Sign In</a>
+            <a href="#" class="block text-white py-2 hover:text-gray-300">Sign Up</a>
+        </div>
+    </nav>
+  </header>
+
+  <body>
+    <section class="hearder-section" style="background-image: url('assets/header-bg.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="companyTitle">
+                    <h1>Lets Travel More Easy !!</h1>
+                    <p>
+                        LifeEase Travel aims to revolutionize the travel by providing personalized,
+                         hassle-free, and memorable travel experiences.
+                    </p>
+                    <a href="About-us.html">More info -></a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="plane">
+                    <img src="assets/header.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-10 bg-gray-100">
+    <div class="container mx-auto bg-white shadow-xl rounded-lg p-6">
+        <h1 class="text-left mb-4 font-extrabold text-4xl text-blue-600">Book Now</h1>
+        <div class="flex border-b pb-3 mb-4 space-x-4">
+            <button class="tab-btn px-4 py-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-600 transition duration-300" onclick="showTab('flights')">Flights</button>
+            <button class="tab-btn px-4 py-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-600 transition duration-300" onclick="showTab('hotels')">Hotels</button>
+            <button class="tab-btn px-4 py-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-600 transition duration-300" onclick="showTab('cars')">Car Rental</button>
+            <button class="tab-btn px-4 py-2 text-lg font-semibold border-b-4 border-transparent hover:border-blue-600 transition duration-300" onclick="showTab('packages')">Packages</button>
+        </div>
+        
+        <div id="flights" class="tab-content grid grid-cols-1 md:grid-cols-5 gap-4">
+            <input type="text" placeholder="From" class="input-field">
+            <input type="text" placeholder="To" class="input-field">
+            <input type="date" class="input-field">
+            <select class="input-field">
+                <option>Economy</option>
+                <option>Business</option>
+                <option>First Class</option>
+            </select>
+            <button class="btn-primary bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition;">Find Flights</button>
+        </div>
+
+        <div id="hotels" class="tab-content hidden grid grid-cols-1 md:grid-cols-6 gap-4">
+            <input type="text" placeholder="Destination or Hotel" class="input-field">
+            <input type="date" placeholder="Check-in" class="input-field">
+            <input type="date" placeholder="Check-out" class="input-field">
+            <select class="input-field">
+                <option>1 Room</option>
+                <option>2 Rooms</option>
+                <option>3 Rooms</option>
+                <option>4+ Rooms</option>
+            </select>
+            <select class="input-field">
+                <option>1 Person</option>
+                <option>2 People</option>
+                <option>3 People</option>
+                <option>4+ People</option>
+            </select>
+            <button class="btn-primary bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition;">Find Hotels</button>
+        </div>
+        
+        <div id="cars" class="tab-content hidden grid grid-cols-1 md:grid-cols-4 gap-4">
+            <input type="text" placeholder="Pick-up Location" class="input-field">
+            <input type="date" class="input-field">
+            <select class="input-field">
+                <option>Economy</option>
+                <option>Standard</option>
+                <option>Luxury</option>
+                <option>SUV</option>
+            </select>
+            <button class="btn-primary bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition;">Find Cars</button>
+        </div>
+        
+        <div id="packages" class="tab-content hidden grid grid-cols-1 md:grid-cols-4 gap-4">
+            <input type="text" placeholder="Destination" class="input-field">
+            <input type="date" class="input-field">
+            <select class="input-field w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-600;">
+                <option>Single Traveler</option>
+                <option>Couple</option>
+                <option>Family</option>
+                <option>Group</option>
+            </select>
+            <button class="btn-primary bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition;">Find Packages</button>
+        </div>
+    </div>
+</section>
+<section>
+
+    <!-- Main Section -->
+    <div class="container mx-auto px-4 my-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Left Box (Logos) -->
+            <div class="bg-[#002E8B] text-white p-6 rounded-lg shadow-lg text-center">
+                <div class="flex justify-center space-x-4 mb-4">
+                    <img src="./assets/client-1.jpg" class="w-8 h-8 rounded-full" alt="Logo">
+                    <img src="./assets/client-1.jpg" class="w-8 h-8 rounded-full" alt="Logo">
+                    <img src="./assets/client-1.jpg" class="w-8 h-8 rounded-full" alt="Logo">
+                    <img src="./assets/client-1.jpg" class="w-8 h-8 rounded-full" alt="Logo">
+                    <img src="./assets/client-1.jpg" class="w-8 h-8 rounded-full" alt="Logo">
+                </div>
+                <h3 class="text-lg font-bold">Save when you compare</h3>
+                <p class="text-sm opacity-80">More deals. More sites. One search</p>
+            </div>
+
+            <!-- Middle Box (Search Count) -->
+            <div class="bg-[#002E8B] text-white p-6 rounded-lg shadow-lg text-center">
+                <div class="flex justify-center space-x-4 mb-4">
+                    <img src="./assets/client-1.jpg" class="w-8 h-8 rounded-full" alt="Logo">
+                    <img src="./assets/client-1.jpg" class="w-8 h-8 rounded-full" alt="Logo">
+                    <img src="./assets/client-1.jpg" class="w-8 h-8 rounded-full" alt="Logo">
+                    <img src="./assets/client-1.jpg" class="w-8 h-8 rounded-full" alt="Logo">
+                    <img src="./assets/client-1.jpg" class="w-8 h-8 rounded-full" alt="Logo">
+                </div>
+                <h3 class="text-3xl font-bold">41,000,000+</h3>
+                <p class="text-sm opacity-80">searches this week</p>
+            </div>
+
+            <!-- Right Box (Ratings) -->
+            <div class="bg-[#002E8B] text-white p-6 rounded-lg shadow-lg text-center">
+                <div class="flex justify-center space-x-1 mb-4">
+                    <span class="text-yellow-400 text-5xl">★</span>
+                    <span class="text-yellow-400 text-5xl">★</span>
+                    <span class="text-yellow-400 text-5xl">★</span>
+                    <span class="text-yellow-400 text-5xl">★</span>
+                    <span class="text-yellow-400 text-5xl">★</span>
+                </div>
+                <h3 class="text-lg font-bold">Travelers love us</h3>
+                <p class="text-sm opacity-80">1M+ ratings on our app</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section>
+          <!-- Section: Travel Deals -->
+    <div class="container mx-auto  px-4 my-16">
+        <h2 class="text-2xl font-bold text-[#002E8B] text-center mb-6">Travel deals under $190</h2>
+
+        <!-- Bootstrap Carousel -->
+        <div id="travelDealsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="flex justify-center mb-5">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-80">
+                            <img src="assets/01.png" alt="Trip Image" class="w-full h-48 object-cover">
+                            <div class="p-4 text-center">
+                                <h3 class="text-lg font-bold text-[#002E8B]">Paris Getaway</h3>
+                                <p class="text-gray-600 text-sm">Enjoy the romantic city of Paris at an unbeatable price.</p>
+                                <p class="mt-2 font-bold text-[#002E8B]">From $179</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="flex justify-center mb-5">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-80">
+                            <img src="assets/01.png" alt="Trip Image" class="w-full h-48 object-cover">
+                            <div class="p-4 text-center">
+                                <h3 class="text-lg font-bold text-[#002E8B]">Beach Escape</h3>
+                                <p class="text-gray-600 text-sm">Relax on the sunny beaches with our special deal.</p>
+                                <p class="mt-2 font-bold text-[#002E8B]">From $150</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="flex justify-center mb-5">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-80">
+                            <img src="assets/01.png" alt="Trip Image" class="w-full h-48 object-cover">
+                            <div class="p-4 text-center">
+                                <h3 class="text-lg font-bold text-[#002E8B]">New York Adventure</h3>
+                                <p class="text-gray-600 text-sm">Explore the Big Apple with exclusive discounts.</p>
+                                <p class="mt-2 font-bold text-[#002E8B]">From $189</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#travelDealsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#travelDealsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+
+        </div>
+    </div>
+</section>
+
+<section class="category" id="service">
+    <div class="container">
+        <div class="row">
+            <div class="service">
+                <h1>Ouer trip</h1>
+                <p id="service">
+                    Highlight of exclusiv travel service and experiences
+                </p>
+            </div>
+            <div class="serviceSection">
+                <div class="col-md-4">
+                    <div class="card" style="width: 95%;">
+                        <img src="assets/destination-1.jpg" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Trip to Maldives</h5>
+                          <p class="card-text">Live in paradise for a while and enjoy your stay at our hotel on Kuredhivaru Island in the Maldives.</p>
+                          <a href="requestservice.html" class="btn btn-primary">request one</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 95%;">
+                        <img src="assets/istanbule.webp" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Istanbul city trip</h5>
+                          <p class="card-text">Istanbul, a city that blends modernity with tradition charm, attracts millions of tourists every year.</p>
+                          <a href="requestservice.html" class="btn btn-primary">request one</a>
+                        </div>
+                      </div>
+      
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 95%;">
+                        <img src="assets/spain.jpg" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Spain trip</h5>
+                          <p class="card-text">It is considered one of the most visited countries in the world, with its amazing cities and tourist attractions.</p>
+                          <a href="requestservice.html" class="btn btn-primary">request one</a>
+                        </div>
+                      </div>
+                </div>
+
+                
+            </div>
+            <div class="Dark">
+               <a href="service.html"><button type="button" class="btn btn-dark Gosomewhere" style="margin-right: 5px;" >See More</button></a>
+                <a href="requestservice.html" class="btn btn-primary Gosomewhere">request servise</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="partnership">
+    <div class="container">
+
+    
+    <div class="row">
+        <div class="col-md-2">
+            <div class="part">
+                <img src="assets/06.png">
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="part">
+                <img src="assets/05.png">
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="part">
+                <img src="assets/04.png">
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="part">
+                <img src="assets/03.png">
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="part">
+                <img src="assets/02.png">
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="part">
+                <img src="assets/01.png">
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section>
+    <div class="container bg-white shadow-lg rounded-lg p-4">
+        <h2 class="text-center text-2xl font-bold mb-4">Car Rental Offers</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assets/01.png" class="card-img-top" alt="Car Image">
+                    <div class="card-body">
+                        <h5 class="card-title font-bold">Luxury Sedan</h5>
+                        <p class="card-text">A comfortable and stylish sedan for city rides.</p>
+                        <button class="btn btn-primary w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assets/01.png" class="card-img-top" alt="Car Image">
+                    <div class="card-body">
+                        <h5 class="card-title font-bold">SUV</h5>
+                        <p class="card-text">Perfect for family trips with extra space.</p>
+                        <button class="btn btn-primary w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assets/01.png" class="card-img-top" alt="Car Image">
+                    <div class="card-body">
+                        <h5 class="card-title font-bold">Convertible</h5>
+                        <p class="card-text">Enjoy the open road with a stylish convertible.</p>
+                        <button class="btn btn-primary w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assets/01.png" class="card-img-top" alt="Car Image">
+                    <div class="card-body">
+                        <h5 class="card-title font-bold">Economy</h5>
+                        <p class="card-text">Budget-friendly and fuel-efficient for daily use.</p>
+                        <button class="btn btn-primary w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="photoShowcase">
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="display-4">Photo Showcase</h1>
+            <p class="lead">Explore our stunning destinations and exclusive experiences.</p>
+        </div>
+        
+        <div class="row">
+            <!-- Interactive Image Cards with Hover Effects -->
+            <div class="col-md-4 mb-4">
+                <div class="card showcase-card">
+                    <img src="assets/destination-1.jpg" class="card-img-top Showcase-img" alt="Destination 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Beautiful Beach</h5>
+                        <p class="card-text">A serene beach perfect for relaxation and adventure.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal1">View Full Image</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card showcase-card">
+                    <img src="assets/destination-2.jpg" class="card-img-top Showcase-img" alt="Destination 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Majestic Mountain</h5>
+                        <p class="card-text">Enjoy breathtaking views from the top of this mountain.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal2">View Full Image</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card showcase-card">
+                    <img src="assets/destination-3.jpg" class="card-img-top Showcase-img" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Gorgeous Forest</h5>
+                        <p class="card-text">A perfect escape into nature with lush greenery and tranquility.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal3">View Full Image</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Full Image View -->
+        <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="assets/destination-1.jpg" class="d-block w-100" alt="Destination 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="assets/destination-2.jpg" class="d-block w-100" alt="Destination 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="assets/destination-3.jpg" class="d-block w-100" alt="Destination 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="travelExperiences">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1 class="display-4">
+                    Discover Unmatched Luxury in<br> Travel Experiences
+                </h1>
+                <p class="lead">
+                    Our services are for discerning travelers seeking the finest experiences—from base-level travel arrangements to exclusive access. We ensure every journey is extraordinary.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Corporate Travel Solutions Card -->
+            <div class="col-md-4 mb-4">
+                <div class="experience-card">
+                    <div class="checkmark-img">
+                        <img src="assets/checkmark.png" alt="Checkmark">
+                    </div>
+                    <h3>Corporate Travel Solutions for Business Leaders</h3>
+                    <p>
+                        Our tailored luxury travel packages will elevate your travel experiences and ensure smooth corporate travel.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exclusive Events Card -->
+            <div class="col-md-4 mb-4">
+                <div class="experience-card">
+                    <div class="checkmark-img">
+                        <img src="assets/checkmark.png" alt="Checkmark">
+                    </div>
+                    <h3>Exclusive Events for Unforgettable Experiences</h3>
+                    <p>
+                        Discover unique events that offer unforgettable experiences, perfectly curated for those who seek the extraordinary.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Luxury Travel Packages Card -->
+            <div class="col-md-4 mb-4">
+                <div class="experience-card">
+                    <div class="checkmark-img">
+                        <img src="assets/checkmark.png" alt="Checkmark">
+                    </div>
+                    <h3>Luxury Travel Packages for Discerning Travelers</h3>
+                    <p>
+                        Explore our exclusive luxury packages, designed for travelers who seek the finest in comfort, style, and elegance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ABOUT" id="ABOUT">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Column: Image -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="aboutimg">
+                    <img src="assets/shenzen.png" class="img-fluid rounded shadow-lg" alt="Travel Image">
+                </div>
+            </div>
+
+            <!-- Right Column: About Information -->
+            <div class="col-md-6">
+                <div class="aboutPara">
+                    <h2 class="display-4 text-primary">ABOUT</h2>
+                    <p>
+                        LifeEase Travel is a startup travel agency offering comprehensive travel solutions to individuals and groups seeking hassle-free, comfortable, and memorable travel experiences. Our agency provides a one-stop-shop for all travel needs, including transportation, accommodations, tours, and activities.
+                    </p>
+                    <br>
+                    <p>
+                        We generate revenue through commissions from travel bookings, tour sales, and travel-related merchandise. With our expanding customer base and partnerships, we project steady growth in revenue over the next three years.
+                    </p>
+                    <a href="About-us.html" class="btn btn-primary btn-lg mt-4">More About Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+<!-- Section: Round Trip Fares -->
+<div class="container mx-auto px-4 my-16">
+    <h2 class="text-2xl font-bold text-[#002E8B] text-center mb-6">Don’t Miss These Round Trip Fares</h2>
+
+    <!-- Grid for Ticket Offers -->
+    <div class="row gy-4">
+
+        <!-- Ticket Box 1 -->
+        <div class="col-md-4">
+            <div class="bg-white shadow-lg rounded-lg p-5 text-center border border-gray-200">
+                <h3 class="text-lg font-bold text-[#002E8B]">New York → Los Angeles</h3>
+                <p class="text-gray-600 text-sm">Round trip, non-stop flight</p>
+                <p class="mt-2 font-bold text-xl text-[#002E8B]">$199</p>
+                <button class="btn btn-primary bg-[#002E8B] text-white mt-3 w-full">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Ticket Box 2 -->
+        <div class="col-md-4">
+            <div class="bg-white shadow-lg rounded-lg p-5 text-center border border-gray-200">
+                <h3 class="text-lg font-bold text-[#002E8B]">Chicago → Miami</h3>
+                <p class="text-gray-600 text-sm">Round trip, 1 stop</p>
+                <p class="mt-2 font-bold text-xl text-[#002E8B]">$179</p>
+                <button class="btn btn-primary bg-[#002E8B] text-white mt-3 w-full">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Ticket Box 3 -->
+        <div class="col-md-4">
+            <div class="bg-white shadow-lg rounded-lg p-5 text-center border border-gray-200">
+                <h3 class="text-lg font-bold text-[#002E8B]">San Francisco → Seattle</h3>
+                <p class="text-gray-600 text-sm">Round trip, direct</p>
+                <p class="mt-2 font-bold text-xl text-[#002E8B]">$159</p>
+                <button class="btn btn-primary bg-[#002E8B] text-white mt-3 w-full">Book Now</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+    
+
+
+<section class="feedback">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12 mb-5">
+                <h1 class="display-4 text-primary">Customer Feedback</h1>
+                <p class="lead">Tell us what you think about our service</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- First Feedback Card -->
+            <div class="col-md-3 mb-4">
+                <div class="feedback-card shadow-lg">
+                    <img src="assets/client-4.jpg" class="card-img-top" alt="Client 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Abedalla Emara</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam enim dolorem repellendus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Feedback Card -->
+            <div class="col-md-3 mb-4">
+                <div class="feedback-card shadow-lg">
+                    <img src="assets/client-2.jpg" class="card-img-top" alt="Client 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Trip to Maldives</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam enim dolorem repellendus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Feedback Card -->
+            <div class="col-md-3 mb-4">
+                <div class="feedback-card shadow-lg">
+                    <img src="assets/client-1.jpg" class="card-img-top" alt="Client 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Trip to Maldives</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam enim dolorem repellendus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Feedback Card -->
+            <div class="col-md-3 mb-4">
+                <div class="feedback-card shadow-lg">
+                    <img src="assets/client-3.jpg" class="card-img-top" alt="Client 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Trip to Maldives</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam enim dolorem repellendus.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="footer">
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="nav__logo">
+                    <a href="#" class="logo" style="color: black;">LifeEase Travel</a>
+                </div>
+                <p style="text-align: left; margin-top: 30px;">
+                    Explore the world with ease and excitement through our comprehensive travel platform. Your journey begins here, where
+                    seamless planning meets unforgettable experiences.
+                </p>
+                <div class="socilMedia">
+                    <div class="fas">
+
+                    </div>
+                    <div class="fas">
+                        
+                    </div>
+                    <div class="fas">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="Quicklinks">
+                    <h4>Quick Links</h4>
+                        <a href="#">Home</a>
+                        <a href="#">Flights</a>
+                        <a href="#">Hotels</a>
+                        <a href="#">Cruise</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="Quicklinks">
+                <h4>Contact Us</h4>
+                <a href="#"><span><i class="ri-phone-fill"></i></span>+91 9876543210</a>
+                <a href="#">
+                    <span><i class="ri-record-mail-line"></i></span> info@skywings
+                  </a>
+                  <a href="#">
+                    <span><i class="ri-map-pin-2-fill"></i></span> New Delhi, India
+                  </a>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="Quicklinks">
+                    <h4>Subscribe</h4>
+                    <input placeholder="Enter Your email">
+                    <a href="#" class="btn btn-primary Subscribe">Subscribe</a>
+                </div>
+            </div>
+        
+    </div>
+</footer>
+</section>
+
+<p class="Copyright">Copyright © 2024 ABEDALLA EMARA. All rights reserved.</p>
+</body>
+
+
+  <script src="js/javascript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
